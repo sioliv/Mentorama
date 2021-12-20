@@ -50,7 +50,7 @@ public class ChamadaAlunos {
       case 2: {
         List<Diario> listaDiario = alunos.getDiarioList();
         for(Diario diario : listaDiario){
-          //percorro todos os itens que estao nessa lista de produtos
+
           System.out.println("Chamada feita com sucesso:");
           System.out.println("--- Data Chamada: " + diario.getDataChamada());
           System.out.println("--- Nome Do Aluno: " + diario.getAluno());
