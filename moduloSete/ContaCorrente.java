@@ -1,6 +1,5 @@
 package moduloSete;
 
-//Conta corrente é um tipo de conta. Conta corrente herda de Conta
 public class ContaCorrente extends Conta {
 
   private double chequeEspecial;
