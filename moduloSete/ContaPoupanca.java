@@ -3,7 +3,7 @@ package moduloSete;
 public class ContaPoupanca extends Conta {
 
   private int diaAniversario;
-  
+
   public ContaPoupanca(int numeroConta, String banco, int agencia, double saldo,
       int diaAniversario) {
     super(numeroConta, banco, agencia, saldo);

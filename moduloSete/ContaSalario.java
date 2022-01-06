@@ -24,7 +24,7 @@ public class ContaSalario extends Conta{
 
   @Override
   public void sacar(double valorSacado){
-  //limitando o número de saque se o saldo for maior do que o valor sacado
+  
   if(saldo >= valorSacado && limiteSaque == 2){
       saldo = saldo - valorSacado;
       System.out.println("Valor sacado: " +valorSacado);
