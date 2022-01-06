@@ -1,11 +1,7 @@
 package moduloSete;
 
-//SAlario, já que você tem tudo que um Conta tem
-// Classe salario é uma conta. Conta Salario herda da class Conta
 public class ContaSalario extends Conta{
-  /*
-  Além disso, crie uma classe chamada ContaSalário que herda da superclasse e nela haverá uma restrição na qual existe um limite de saques que podem ser feitos. É claro que existem muitas regras de negócios envolvidas numa conta real, mas vamos deixar aqui na nossa tarefa mais simples.
-   */
+
   private int limiteSaque;
 
   public ContaSalario(int numeroConta, String banco, int agencia, double saldo, int limiteSaque){
@@ -16,10 +12,9 @@ public class ContaSalario extends Conta{
 
   @Override
   public double getSaldo(){
-    return super.saldo;// Mostro que o atributo não está definido nessa classe
+    return super.saldo;
   }
 
-  //Colocando a regra específica somente da conta salário
   @Override
   public void depositar(double quantiaDeposito){
     saldo =  saldo + quantiaDeposito;
@@ -43,9 +38,3 @@ public class ContaSalario extends Conta{
   }
 
 }
-
-
-/*
-regra de negócio, limite de saque por usuário
-
- */

@@ -2,7 +2,6 @@ package moduloSete;
 
 public class TesteConta {
 
-
   public static void main(String[] args) {
 
     ContaCorrente cc1 = new ContaCorrente(22, "Banco AA", 1, 100.00, 50.00, 100.00);

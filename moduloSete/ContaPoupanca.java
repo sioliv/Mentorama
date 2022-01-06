@@ -3,9 +3,7 @@ package moduloSete;
 public class ContaPoupanca extends Conta {
 
   private int diaAniversario;
-  private double taxaDeJuros;
-
-
+  
   public ContaPoupanca(int numeroConta, String banco, int agencia, double saldo,
       int diaAniversario) {
     super(numeroConta, banco, agencia, saldo);
@@ -37,7 +35,7 @@ public class ContaPoupanca extends Conta {
 
   @Override
   public void sacar(double valorSacadoContaPoupanca) {
-    //limitando o número de saque se o saldo for maior do que o valor sacado
+
     if (saldo >= valorSacadoContaPoupanca) {
       saldo = saldo - valorSacadoContaPoupanca;
       System.out.println("Valor sacado: " + valorSacadoContaPoupanca);
