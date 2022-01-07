@@ -12,6 +12,13 @@ public class ContaPoupanca extends Conta {
   }
 
   @Override
+  public String toString() {
+    return super.toString() + "ContaPoupanca{" +
+        "diaAniversario=" + diaAniversario +
+        '}';
+  }
+
+  @Override
   public double getSaldo() {
     if (diaAniversario >= 1 && diaAniversario <= 10) {
       double juros = ((saldo / 100) + 0.01);

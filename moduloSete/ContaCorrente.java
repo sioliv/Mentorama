@@ -11,8 +11,8 @@ public class ContaCorrente extends Conta {
         '}';
   }
 
-  public ContaCorrente(int numeroConta, String banco, int agencia, double saldo, double sacar,
-      double depositar) {
+  public ContaCorrente(int numeroConta, String banco, int agencia, double saldo
+      ) {
     super(numeroConta, banco, agencia, saldo);// chama o método da classe pai (superclasse)
     this.chequeEspecial = chequeEspecial;
   }
